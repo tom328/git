@@ -1,0 +1,45 @@
+git init 创建仓库
+
+git add .    添加文件
+git commit -m "提交说明"
+
+git log 查看历史版本记录
+
+git reset --hard 版本id     回退(版本穿梭)
+
+
+git checkout . 撤销文件修改  回到最后一次记录    误改
+
+如果已经add  只能使用版本回退
+
+
+
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>
+
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
+查看分支记录：git reflog <name>
+
+
+
+远程库
+    git clone 仓库地址 
+
+    本地库和远程库的交互
+        1. ssh-keygen -t rsa -C "214834605@qq.com"
+
+        2. 在github、码云设置页添加ssh   ->  id_rsa.pub
+
+        3. git remote add origin  远程库地址      本地库和远程库建立关联
+
+        4. git push origin master   将本地库更新推送到远程库
+
+        5. git pull origin master   将远程库更新拉取到本地库
